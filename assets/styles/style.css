@@ -1,0 +1,11 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background-image: url('../images/bg-intro-desktop.png');
+    background-size: cover;       /* Растягивает изображение на весь экран */
+    background-repeat: no-repeat; /* Отключает повторение */
+    
+    margin: 0; 
+    height: 100vh;
+}
