@@ -6,6 +6,7 @@
     color: hsl(228, 45%, 44%); 
     text-decoration: none;
 }
+
 @font-face {
     font-family: Poppins;
     src: url(../fonts/Poppins-Light.ttf);
@@ -14,14 +15,18 @@
     font-family: Poppins_bold;
     src: url(../fonts/Poppins-Bold.ttf);
 }
+@font-face {
+    font-family: Poppins_italic;
+    src: url(../fonts/Poppins-Italic.ttf);
+}
 * {
     margin: 0;
     padding: 0;
 }
 body {
     background-image: url('../images/bg-intro-desktop.png');
-    background-size: cover;       /* Растягивает изображение на весь экран */
-    background-repeat: no-repeat; /* Отключает повторение */
+    background-size: cover;  
+    background-repeat: no-repeat;
     background-color: hsl(0, 100%, 74%) ;
 
     color: white;
@@ -30,6 +35,9 @@ body {
     margin: 0; 
     height: 100vh;
 }
+
+
+
 
 .main {
     display: flex;
@@ -48,6 +56,9 @@ body {
 }
 
 
+
+
+
 .right_side {
     width: 600px;
     display: flex;
@@ -55,6 +66,10 @@ body {
     flex-direction: column;
     
 }
+
+
+
+
 
 .blue_notification {
     display: flex;
@@ -66,12 +81,16 @@ body {
     width: 600px;
     margin-bottom: 30px;
     border-radius: 10px;
+    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.178);
 }
 .blue_notification a{
     color: white;
     font-family: Poppins_bold;
     text-decoration: none;
 }
+
+
+
 
 .interaction_container {
     display: flex;
@@ -80,6 +99,8 @@ body {
     padding: 40px;
     width: 520px;
     
+
+    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.178);
     background-color: white;
     border-radius: 10px;
    
@@ -87,7 +108,12 @@ body {
 
 
 
-input {
+
+
+.input_container{
+    margin-bottom: 20px;
+}
+.input_ {
     width: 490px;
     height: 50px;
     
@@ -98,13 +124,41 @@ input {
 
     padding-left: 30px;
 }
-.input_container{
-    margin-bottom: 20px;
+.input_error {
+    width: 490px;
+    height: 50px;
+    
+    font-family: Poppins_bold;
+
+    border: 2px solid hsl(0, 100%, 74%);
+    border-radius: 8px;
+
+    padding-left: 30px;
 }
-.input_notification {
+.input_error::placeholder{
     color: hsl(0, 100%, 74%);
-    font-size: 11px; 
 }
+
+
+.error_notification_hide{
+    display: none;
+}
+.error_notification_show {
+    padding-top: 5px;
+
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    font-size: 11px;
+    font-family: Poppins_italic;
+   
+}
+
+
+
+
+
+
+
 
 
 button {
@@ -120,8 +174,11 @@ button {
     background-color: hsl(154, 59%, 51%);
     color: white;
 
-
     margin-bottom: 20px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: hsl(154, 84%, 58%);
 }
 
 
