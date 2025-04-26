@@ -186,11 +186,6 @@ button:hover {
 
 
 
-
-
-
-
-
 .main .attribution a {
     color: hsl(0, 100%, 74%);
     font-family: Poppins_bold;
@@ -198,4 +193,61 @@ button:hover {
 }
 .main .attribution {
     color: rgb(173, 173, 173);
+}
+
+
+
+
+
+@media (max-width: 375px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .main .left_side h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+
+
+
+    .left_side{
+        width: 300px;
+    }
+    .right_side{
+        width: 300px;
+    }
+    
+    .blue_notification {
+        width: 300px;
+    }
+
+     
+    
+    .interaction_container {
+        width: 220px;
+    }
+    
+    .input_ {
+        width: 190px;
+    }
+    .input_error {
+        width: 190px;
+    }
+    
+    
+    button {
+        width: 220px;
+    }
+    
+    
+    
+    
 }
